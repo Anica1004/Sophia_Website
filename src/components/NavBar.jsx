@@ -7,7 +7,7 @@ export default function NavBar(){
        <nav>
         <h1>Sophia (Sumin) Mok</h1>
         <ul className = "nav-links">
-            <li><a className = "link" href = "#TBD">Demo Reel</a></li>
+            <li><a className = "link" href = "/">Demo Reel</a></li>
             <li><a className = "link" href = "#TBD">Portfolio</a></li>
             <li><a className = "link" href = "#TBD">Resume</a></li>
             <li><a className = "link" href = "#TBD">Articles</a></li>
