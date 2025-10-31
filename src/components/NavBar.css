@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
-nav{
+.navbar{
     display: flex; 
     flex-direction: row;
     justify-content: space-around;
@@ -8,7 +8,7 @@ nav{
 
 }
 
-nav > h1{
+.navbar > h1{
     font-size: 32px;
     font-family: 'serif';
     font-weight: 400;

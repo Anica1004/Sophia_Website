@@ -1,28 +1,62 @@
-import './NavBar.css'
-import { FaLinkedin } from 'react-icons/fa';
+import './NavBar.css';
+import { motion } from 'framer-motion';
+import { Link, NavLink, useLocation } from 'react-router-dom';
 
-export default function NavBar(){
+const navVariants = {
+  hidden: { opacity: 0, y: 15 },
+  show: {
+    opacity: 1, y: 0,
+    transition: {
+      duration: 0.3,
+      ease: 'easeOut',
+      delayChildren: 0.01,
+      staggerChildren: 0.07,
+    },
+  },
+};
 
-    return (
-       <nav>
-        <h1>Sophia (Sumin) Mok</h1>
-        <ul className = "nav-links">
-            <li><a className = "link" href = "/">Demo Reel</a></li>
-            <li><a className = "link" href = "#TBD">Portfolio</a></li>
-            <li><a className = "link" href = "#TBD">Resume</a></li>
-            <li><a className = "link" href = "#TBD">Articles</a></li>
-            <li>
-        <a
+const itemVariants = {
+  hidden: { opacity: 0, y: 15 },
+  show: { opacity: 1, y: 0, transition: { duration: 0.3, ease: 'easeOut' } },
+};
+
+export default function NavBar() {
+  const location = useLocation();
+
+  return (
+    <motion.nav
+      key={location.pathname}             
+      variants={navVariants}
+      initial="hidden"
+      animate="show"
+      className="navbar"
+    >
+      <motion.h1 variants={itemVariants}>Sophia (Sumin) Mok</motion.h1>
+
+      <ul className="nav-links">
+        <motion.li variants={itemVariants}>
+          <NavLink to="/" className="link">Demo Reel</NavLink>
+        </motion.li>
+        <motion.li variants={itemVariants}>
+          <NavLink to="/portfolio" className="link">Portfolio</NavLink>
+        </motion.li>
+        <motion.li variants={itemVariants}>
+          <NavLink to="/resume" className="link">Resume</NavLink>
+        </motion.li>
+        <motion.li variants={itemVariants}>
+          <NavLink to="/articles" className="link">Articles</NavLink>
+        </motion.li>
+        <motion.li variants={itemVariants}>
+          <a
             href="https://www.linkedin.com/in/sophiasuminmok"
             target="_blank"
             rel="noopener noreferrer"
-            class="linkedin-icon"
-        >
+            className="linkedin-icon"
+          >
             in
-        </a>
-        </li>
-        </ul>
-       </nav>
-    ); 
-
+          </a>
+        </motion.li>
+      </ul>
+    </motion.nav>
+  );
 }

@@ -7,7 +7,7 @@ function App() {
   
 
   return (
-
+    <div className="container">
     <Router>
     {/* This stays constant on all pages */}
     <NavBar />
@@ -19,6 +19,7 @@ function App() {
       {/* <Route path="/about" element={<About />} /> */}
     </Routes>
   </Router>
+  </div>
   )
 }
 export default App
