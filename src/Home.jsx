@@ -5,7 +5,7 @@ import './Home.css'
 export default function Home(){
 
     return (
-        <div className="container">
+        <div className="container page-enter">
         <div className = "content">
         <Button title="CLICK TO VIEW ON VIMEO"/>
 
