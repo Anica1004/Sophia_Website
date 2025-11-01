@@ -1,6 +1,6 @@
-import Button from './components/Button'
-import DemoReel from './components/DemoReel'
-import './Home.css'
+import Button from '../components/Button'
+import DemoReel from '../components/DemoReel'
+import '../pages/Home.css'
 
 export default function Home(){
 
