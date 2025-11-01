@@ -35,16 +35,16 @@ export default function NavBar() {
 
       <ul className="nav-links">
         <motion.li variants={itemVariants}>
-          <NavLink to="/" className="link">Demo Reel</NavLink>
+          <NavLink to="/" className={({isActive}) => (isActive? "link active": "link")}>Demo Reel</NavLink>
         </motion.li>
         <motion.li variants={itemVariants}>
-          <NavLink to="/portfolio" className="link">Portfolio</NavLink>
+          <NavLink to="/portfolio" className={({isActive}) => (isActive? "link active": "link")}>Portfolio</NavLink>
         </motion.li>
         <motion.li variants={itemVariants}>
-          <NavLink to="/resume" className="link">Resume</NavLink>
+          <NavLink to="/resume" className={({isActive}) => (isActive? "link active": "link")}>Resume</NavLink>
         </motion.li>
         <motion.li variants={itemVariants}>
-          <NavLink to="/articles" className="link">Articles</NavLink>
+          <NavLink to="/articles" className={({isActive}) => (isActive? "link active": "link")}>Articles</NavLink>
         </motion.li>
         <motion.li variants={itemVariants}>
           <a

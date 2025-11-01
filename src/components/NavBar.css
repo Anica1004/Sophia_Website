@@ -46,6 +46,10 @@
     transition: width 0.3s ease;
 }
 
+.active::after{
+    width: 100%; 
+}
+
 .link:hover::after{
     width: 100%; 
 }
