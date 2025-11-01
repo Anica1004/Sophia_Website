@@ -3,13 +3,14 @@
 .navbar{
     display: flex; 
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding-left: 3rem;
+    padding-right: 3rem; 
     align-items: center;
-
 }
 
 .navbar > h1{
-    font-size: 32px;
+    font-size: 30px;
     font-family: 'serif';
     font-weight: 400;
 }
@@ -18,7 +19,7 @@
     list-style: None;
     display: flex; 
     justify-content: space-around; 
-    gap: 2rem; 
+    gap: 1rem; 
     font-size: 16px; 
     font-family: "Poppins";
     align-items: center;
