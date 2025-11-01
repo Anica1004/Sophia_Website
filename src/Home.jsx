@@ -7,7 +7,7 @@ export default function Home(){
     return (
         <div className="container page-enter">
         <div className = "content">
-        <Button title="CLICK TO VIEW ON VIMEO"/>
+        <Button title="CLICK TO VIEW ON VIMEO" width = {6}/>
 
         <div className = "demo-reels">
           <DemoReel link="https://player.vimeo.com/video/806201784?h=ee34fd0feb" title="texture + lookdev demoreel"/>
