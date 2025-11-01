@@ -5,7 +5,7 @@ export default function Article({title, content, video_link="", link}){
     return (
         <div>
             <a className="header" href={link}>{title}</a>
-            <p className="content">{content}</p>
+            <p className="body" dangerouslySetInnerHTML={{ __html: content }} />
             {video_link && <iframe
             title="vimeo-player"
             src={video_link}
