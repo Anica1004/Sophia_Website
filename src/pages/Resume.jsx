@@ -81,7 +81,7 @@ export default function Resume(){
     return (
     <div className="wrapper">
 
-        <div className="resume">
+        <div className="resume page-enter">
         <Button title="PRESS TO VIEW RESUME" width="5" height="2"/>
         <img src={cvIcon} alt="CV icon" width="120" height="120" />
 
