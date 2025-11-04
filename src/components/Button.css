@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 .btn{
     /* font-family: 'Poppins'; */
@@ -8,10 +8,11 @@
     display: inline-block;
     text-decoration: none;
     color: black; 
-    max-width: 14ch;        
+    max-width: 18ch;        
     white-space: normal;
     text-align: center; 
     word-wrap: break-word;
+    font-family: 'Poppins'; 
 }
 
 a{

@@ -1,14 +1,14 @@
 import './Button.css'
 
 
-export default function Button({title, width}){
+export default function Button({title, width, height="1", link=""}){
   const style = { 
-    padding: `1rem ${width}rem` 
+    padding: `${height}rem ${width}rem` 
   };
     return (
         <a
           style = {style}
-          href="https://vimeo.com/806201784"
+          href={link}
           target="_blank"
           rel="noopener noreferrer"
           class="btn"
