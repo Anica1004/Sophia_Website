@@ -1,0 +1,15 @@
+.project-container{
+    padding-left: 3rem;
+    padding-right: 3rem; 
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+@media (max-width: 768px) {
+    .project-container {
+      flex-direction: column;
+      align-items: center;  
+    }
+  }
