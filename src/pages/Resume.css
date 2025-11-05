@@ -1,5 +1,6 @@
 .wrapper{
     margin-top: 5rem; 
+    padding-bottom: 5rem; 
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -43,6 +44,7 @@
     padding: 0.6rem 0.5rem;
     vertical-align: top;
   }
+  
 
   .highlighted{
     font-weight: 700; 
