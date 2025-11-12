@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,400;1,600&display=swap");
+
+
+/* top bar */
+.mnav-bar {
+  position: sticky; top: 0; z-index: 40;
+  display: flex; align-items: center; justify-content: space-between;
+  /* 👇 match overlay’s inline padding so brand X-position is identical */
+  padding: 1rem 1.25rem;
+  background: #fff;
+}
+
+.mnav-brand {
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-family: "serif";
+  line-height: 1;   /* avoid vertical wobble */
+  margin: 0;
+}
+
+/* hamburger (same outer box size as close button) */
+.mnav-burger {
+  width: 44px; height: 44px;
+  background: none; border: 0; padding: 0;
+  display: inline-flex; flex-direction: column; align-items: center; justify-content: center;
+  gap: 10px; line-height: 1; cursor: pointer;
+}
+.mnav-burger span {
+  width: 34px; height: 1px; background: #222; border-radius: 2px; display: block;
+}
+
+/* full-screen overlay */
+.mnav-overlay {
+  position: fixed; inset: 0; z-index: 60;
+  background: #fff; display: grid;
+  grid-template-rows: auto 1fr auto; /* top / center / bottom */
+  padding: 1rem 1.25rem;  /* 👈 same inline padding */
+}
+
+/* overlay top (brand + close) */
+.mnav-overlay-top {
+  display: flex; align-items: center; justify-content: space-between;
+}
+
+/* Close button uses the SAME outer size as burger */
+.mnav-close {
+  width: 44px; height: 44px;
+  background: none; border: none; position: relative; cursor: pointer;
+  line-height: 1; padding: 0;
+}
+.mnav-close span {
+  position: absolute; left: 50%; top: 50%;
+  width: 28px; height: 1px; background: #222; border-radius: 2px;
+  transform-origin: center;
+}
+.mnav-close span:nth-child(1) { transform: translate(-50%, -50%) rotate(45deg); }
+.mnav-close span:nth-child(2) { transform: translate(-50%, -50%) rotate(-45deg); }
+
+/* center big links */
+.mnav-overlay-center {
+  display: grid; place-content: center; gap: 1rem; text-align: center;
+}
+.mnav-biglink {
+  font-size: clamp(1.6rem, 8.5vw, 2.6rem);
+  text-decoration: none;
+  color: #111;
+  font-weight: 400;
+  font-family: "Poppins";
+}
+
+/* bottom LinkedIn circle */
+.mnav-overlay-bottom { display: grid; place-items: center; }
+.mnav-circle {
+  width: 45px; height: 45px;
+  border: 1.5px solid #111; border-radius: 50%;
+  display: grid; place-items: center;
+  text-decoration: none; color: #111; font-weight: 700; font-size: 1.4rem;
+}
+
+/* hide mobile bar on desktop (desktop navbar takes over) */
+@media (min-width: 768px) { .mnav-bar { display: none; } }
