@@ -1,22 +1,36 @@
 .stills{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 1rem; 
-    justify-content: center; 
-    align-items: flex-start;
+}
+
+.stills h2{
+    font-weight: 500; 
+    font-size: 2.8rem;
+    font-family: serif; 
+    margin-bottom: 3rem;
+}
+
+.parts{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     padding-bottom: 6rem;
+    gap: 1rem; 
 }
 
 .part{
     display: flex; 
     flex-direction: column;
-    justify-content: center; 
     align-items: center;
     gap: 1rem; 
 }
 
 .part img{
-    width: 90%; 
+    width: 100%;
+    max-width: 45vw; 
 
 }
 
@@ -105,6 +119,27 @@
 }
 
 
+.fade-in {
+    position: relative;
+    overflow: hidden;             
+  }
+  
+  .fade-in::before {
+    content: "";
+    position: absolute;
+    inset: 0;                    
+    background: white;          
+    transform: translateY(0%);    
+    transition: transform 0.4s ease-out;
+    pointer-events: none;
+  }
+  .fade-in.visible::before {
+    transform: translateY(-100%);
+  }
+  
+
+
+
 @media (min-width: 769px) {
     .banner {
         width: 100%; 
@@ -129,5 +164,8 @@
       }
       .part{
         gap: 4rem; 
+      }
+      .parts{
+        gap: 2rem;
       }
   }

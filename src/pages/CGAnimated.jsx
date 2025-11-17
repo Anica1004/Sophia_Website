@@ -2,6 +2,8 @@ import documentOfLife from '../assets/DocumentOfLife/1.png'
 import './CGAnimated.css'
 import LearnMore from '../components/LearnMore'
 import DemoReel from '../components/DemoReel'
+import FadeInOnScroll from "../components/FadeInOnScroll";
+
 
 
 // Images.. TODO: Will use database to clean this up
@@ -43,12 +45,12 @@ export default function CGAnimated(){
         
         <div className="banner">
         <img className="banner-image" src={documentOfLife} alt="Banner"/>
-        <div className="banner-text">
+        <div className="banner-text page-enter">
         <h1>Documents of Life</h1>
         <p>is a CG Animated short I directed and produced in my fourth year of Emily Carr University of Art + Design.</p>
         </div>
         </div>
-       <div className="awards">
+       <div className="awards page-enter">
             <div className="component">
                 <div className="germany-award">
                 <p>This film has been screened in <strong>up-and-coming 2023 International Film Festival Hannover in Germany</strong></p>
@@ -68,21 +70,35 @@ export default function CGAnimated(){
         </div>
 
         <div className="synopsis">
+            <FadeInOnScroll>
             <h2>SYNOPSIS</h2>
+            </FadeInOnScroll>
+            <FadeInOnScroll>
             <p>In an unattended kitchen, objects levitate and arrange by themselves. The moving objects reveal details about the kitchen owner and the cause of the supernatural phenomenon. </p>
+            </FadeInOnScroll>
             <DemoReel link="https://www.youtube.com/embed/3ib-F2JUpUo?si=0FjG75hUNB_10gaT"/>
         </div>
 
         <div className="stills">
+        <FadeInOnScroll>
+         <h2>STILLS</h2>
+         </FadeInOnScroll>
+
+         <div className="parts">
             <div className='part'>
             {documentImages1.map((src, index) => (
+                <FadeInOnScroll key={index}>
                 <img key={index} src = {src} alt={`Document frame ${index + 2}`}  />
+                </FadeInOnScroll>
             ))}
            </div>
            <div className='part'>
             {documentImages2.map((src, index) => (
+                 <FadeInOnScroll key={index}>
                 <img key={index} src = {src} alt={`Document frame ${index + 2}`}  />
+                </FadeInOnScroll>
             ))}
+           </div>
            </div>
            
         </div>
