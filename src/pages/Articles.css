@@ -3,12 +3,18 @@
     flex-direction: column;
     align-items: left;
     gap: 2rem; 
-    padding-left: 3rem;
-    padding-right: 3rem; 
+    padding: 1rem;
 }
 
-.articles-container > div {
-    width: 60%;             
-    max-width: 800px;
-    text-align: left;       
+
+@media (min-width: 769px) {
+    .articles-container{
+        padding-left: 3rem;
+        padding-right: 3rem; 
+    }
+    .articles-container > div {
+        width: 60%;             
+        max-width: 800px;
+        text-align: left;          
+    }
 }

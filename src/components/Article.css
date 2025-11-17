@@ -28,13 +28,12 @@
   width: 0%;
 }
 
-.body {
+.body-text {
   font-family: "Poppins";
   font-weight: 400;
   white-space: normal;
-  word-wrap: break-word;
+  word-wrap: break-word; 
   overflow-wrap: anywhere;
-  text-align: justify;
 }
 
 a.header:hover,

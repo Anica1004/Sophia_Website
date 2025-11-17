@@ -3,7 +3,7 @@ import './CGAnimated.css'
 import LearnMore from '../components/LearnMore'
 import DemoReel from '../components/DemoReel'
 import FadeInOnScroll from "../components/FadeInOnScroll";
-
+import NextButton from '../components/NextButton';
 
 
 // Images.. TODO: Will use database to clean this up
@@ -98,10 +98,14 @@ export default function CGAnimated(){
                 <img key={index} src = {src} alt={`Document frame ${index + 2}`}  />
                 </FadeInOnScroll>
             ))}
-           </div>
-           </div>
            
+           </div>
+           </div>
         </div>
+        <div className="forward">
+           <NextButton title="Fine Arts" isRight={true} path="/portfolio/finearts"/>
+           </div>
       
+        
     </div>);
 }
