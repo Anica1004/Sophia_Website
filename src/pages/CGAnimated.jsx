@@ -18,21 +18,20 @@ import img10 from '../assets/DocumentOfLife/10.png'
 import img11 from '../assets/DocumentOfLife/11.png'
 
 const documentImages1 = [
-    img2,
+    documentOfLife,
     img3,
-    img4,
     img5,
-    img6,
-    documentOfLife
-    
+    img7,
+    img10,
+    img11,
   ];
   
   const documentImages2 =[
-    img7,
+    img2,
+    img4,
+    img6,
     img8,
     img9,
-    img10,
-    img11,
   ]
 
 
