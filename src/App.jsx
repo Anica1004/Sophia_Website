@@ -6,6 +6,8 @@ import Resume from './pages/Resume'
 import Portfolio from './pages/Portfolio'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import CGAnimated from './pages/CGAnimated'
+import FineArt from './pages/FineArts'
+import Photography from './pages/Photography'
 function App() {
   
 
@@ -19,6 +21,8 @@ function App() {
       <Route path="/resume" element={<Resume/>}/>
       <Route path="/portfolio" element={<Portfolio/>}/>
       <Route path="/portfolio/cganimatedfilm" element={<CGAnimated/>}/>
+      <Route path="/portfolio/finearts" element={<FineArt/>}/>
+      <Route path="/portfolio/photography" element={<Photography/>}/>
     </Routes>
   </Router>
   </div>

@@ -102,10 +102,15 @@ export default function CGAnimated(){
            </div>
            </div>
         </div>
+       
         <div className="forward">
+        <FadeInOnScroll>
+            <div>
            <NextButton title="Fine Arts" isRight={true} path="/portfolio/finearts"/>
            </div>
-      
+           </FadeInOnScroll>
+           </div>
+           
         
     </div>);
 }

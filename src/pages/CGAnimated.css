@@ -5,6 +5,10 @@
     padding: 2rem; 
 }
 
+.forward > div {
+    display: inline-block;
+  }  
+
 .stills{
     display: flex;
     flex-direction: column;

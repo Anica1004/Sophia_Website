@@ -1,0 +1,30 @@
+.fine-art{
+    display: flex;
+    flex-direction: row;
+    gap: 0.1vw; 
+}
+
+.col{
+    display: flex;
+    flex-direction: column;
+    gap: 0.1vw; 
+}
+
+.col img{
+    width: 24.7vw; 
+}
+
+.two-buttons{
+    padding: 1rem; 
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+@media (min-width: 769px) {
+    .two-buttons{
+        padding: 2rem; 
+    }
+    
+}
