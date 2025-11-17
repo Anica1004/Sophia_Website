@@ -60,7 +60,7 @@
     align-items: flex-start;
 }
 
-.awards{
+.cg-awards{
     width: 100%;
     box-sizing: border-box; 
     display: flex; 
@@ -148,7 +148,7 @@
     .banner-text {
         padding: 4rem 16rem;  
       }
-      .awards{
+      .cg-awards{
         padding: 3rem 15rem; 
         display: flex; 
         flex-direction: row;

@@ -50,7 +50,7 @@ export default function CGAnimated(){
         <p>is a CG Animated short I directed and produced in my fourth year of Emily Carr University of Art + Design.</p>
         </div>
         </div>
-       <div className="awards page-enter">
+       <div className="cg-awards page-enter">
             <div className="component">
                 <div className="germany-award">
                 <p>This film has been screened in <strong>up-and-coming 2023 International Film Festival Hannover in Germany</strong></p>
