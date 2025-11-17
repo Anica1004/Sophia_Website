@@ -18,7 +18,7 @@ export default function DemoReel({ link, title }) {
 
 const stylesheet = {
 
-     container:{
+    container:{
         display: "flex", 
         flexDirection: "column", 
         alignItems: "center", 

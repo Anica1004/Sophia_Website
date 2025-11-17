@@ -76,7 +76,9 @@ export default function CGAnimated(){
             <FadeInOnScroll>
             <p>In an unattended kitchen, objects levitate and arrange by themselves. The moving objects reveal details about the kitchen owner and the cause of the supernatural phenomenon. </p>
             </FadeInOnScroll>
+            <div className="reel">
             <DemoReel link="https://www.youtube.com/embed/3ib-F2JUpUo?si=0FjG75hUNB_10gaT"/>
+            </div>
         </div>
 
         <div className="stills">

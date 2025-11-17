@@ -62,7 +62,10 @@
 
 }
 
-
+.reel{
+    display: flex;
+    justify-content: center; 
+}
 
 .component{
     display: flex; 
