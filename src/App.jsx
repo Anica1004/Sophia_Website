@@ -5,7 +5,7 @@ import Articles from './pages/Articles'
 import Resume from './pages/Resume'
 import Portfolio from './pages/Portfolio'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-
+import CGAnimated from './pages/CGAnimated'
 function App() {
   
 
@@ -18,6 +18,7 @@ function App() {
       <Route path="/articles" element={<Articles />} />
       <Route path="/resume" element={<Resume/>}/>
       <Route path="/portfolio" element={<Portfolio/>}/>
+      <Route path="/portfolio/cganimatedfilm" element={<CGAnimated/>}/>
     </Routes>
   </Router>
   </div>
