@@ -1,22 +1,22 @@
-.photography{
-    display: flex;
-    flex-direction: row;
-    padding: 2rem 3rem; 
-    gap: 0.1vw; 
-    justify-content: center; 
-}
-
-.pic-batch{
-    align-items: flex-start;
+.photography {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    padding: 2rem 1rem;
+    gap: 0.15rem; 
+  }
+  
+  .pic-batch {
     display: flex;
     flex-direction: column;
-    gap: 0.1vw; 
-}
-
-.pic-batch img{
-    width: 30vw; 
-}
-
+    gap: 0.15rem;
+  }
+  
+  .pic-batch img {
+    width: 100%;
+    display: block;
+    height: auto;
+  }
+  
 .backwards{
     padding: 1rem; 
 }
@@ -25,5 +25,9 @@
     .backwards{
         padding: 2rem; 
     }
+    .photography{
+        padding: 2rem 5rem; 
+    }
+
     
 }
