@@ -22,7 +22,7 @@ const stylesheet = {
         display: "flex", 
         flexDirection: "column", 
         alignItems: "center", 
-        width: "100vw", 
+        width: "100%",
         boxSizing: "border-box",
         paddingLeft: "1rem", 
         paddingRight: "1rem",
@@ -30,7 +30,7 @@ const stylesheet = {
      },  
      videoWrapper: {
       width: "100%",
-      maxWidth: "1200px",  
+      maxWidth: "800px",  
       aspectRatio: "16 / 9",   
       overflow: "hidden",
     },
