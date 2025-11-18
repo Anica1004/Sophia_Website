@@ -9,6 +9,12 @@
     padding: 2rem 3rem; 
 }
 
+.brand {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  
 .navbar > h1{
     font-size: 30px;
     font-family: 'serif';

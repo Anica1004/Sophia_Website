@@ -1,6 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,400;1,600&display=swap");
 
 
+
+.mnav-brand{
+  text-decoration: none;
+  color: inherit; 
+
+}
+
 /* top bar */
 .mnav-bar {
   position: sticky; top: 0; z-index: 40;

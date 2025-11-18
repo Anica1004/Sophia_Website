@@ -42,7 +42,10 @@ export default function MobileNavBar() {
           >
             {/* overlay header (brand + X) */}
             <div className="mnav-overlay-top">
-              <div className="mnav-brand">Sophia (Sumin) Mok</div>
+              <NavLink to="/" className="mnav-brand" onClick={() => setOpen(false)}>
+                Sophia (Sumin) Mok
+              </NavLink>
+
               <button
                 className="mnav-close"
                 aria-label="Close menu"

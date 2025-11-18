@@ -31,7 +31,11 @@ export default function DesktopNavBar() {
       animate="show"
       className="navbar"
     >
-      <motion.h1 variants={itemVariants}>Sophia (Sumin) Mok</motion.h1>
+      <motion.h1 variants={itemVariants}>
+          <NavLink to="/" className="brand">
+            Sophia (Sumin) Mok
+          </NavLink>
+        </motion.h1>
 
       <ul className="nav-links">
         <motion.li variants={itemVariants}>
