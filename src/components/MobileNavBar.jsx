@@ -17,7 +17,9 @@ export default function MobileNavBar() {
     <>
       {/* top bar (always visible on mobile) */}
       <header className="mnav-bar">
-        <div className="mnav-brand">Sophia (Sumin) Mok</div>
+      <NavLink to="/" className="mnav-brand" onClick={() => setOpen(false)}>
+                Sophia (Sumin) Mok
+              </NavLink>
         <button
           className="mnav-burger"
           aria-label="Open menu"
