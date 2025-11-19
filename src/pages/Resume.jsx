@@ -82,8 +82,11 @@ export default function Resume(){
     <div className="wrapper">
 
         <div className="resume page-enter">
-        <Button title="PRESS TO VIEW RESUME" width="5" height="2"/>
-        <img src={cvIcon} alt="CV icon" width="120" height="120" />
+        <Button title="PRESS TO VIEW RESUME" width="5" height="2" link="/resume.pdf"/>
+        <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+          <img src={cvIcon} alt="CV icon" width="120" height="120" />
+        </a>
+
 
         <p className ="introduction">
         Hi! <br/>My name is Sophia, and thank you for visiting my profile.<br/>Please feel free to reach out!
