@@ -10,6 +10,14 @@
     margin-top: 2rem;
     gap: 2rem;
   }
+
+  .links {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 2rem;
+  }
   
   .demo-reels{
     display: flex;
