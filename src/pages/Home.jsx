@@ -13,11 +13,11 @@ export default function Home(){
         <Button title="CLICK TO VIEW ON VIMEO" width = {3}  height = {2} link="https://vimeo.com/806201784"/>
         </div>
         <div className = "demo-reels">
-        <DemoReel link="https://www.youtube.com/embed/WehkIlTBwiM?si=hMU9lwff-Vq9XuXn" title="professional texture & lookdev reel"/>
-          <DemoReel link="https://player.vimeo.com/video/806201784?h=ee34fd0feb" title="personal texture & lookdev reel"/>
-          <DemoReel link="https://player.vimeo.com/video/829171109?h=f7c951bad6" title="personal compositing reel"/>
-          <DemoReel link="https://player.vimeo.com/video/1011143104?h=3894bcfb5c" title="professional lighting and compositing reel"/>
-          <DemoReel link="https://www.youtube.com/embed/3ib-F2JUpUo?si=Er79SOhpxjhx17DV" title="student short film"/>
+          <DemoReel link="https://player.vimeo.com/video/806201784?h=ee34fd0feb" title="PERSONAL TEXTURE & LOOKDEV REEL"/>
+          <DemoReel link="https://www.youtube.com/embed/WehkIlTBwiM?si=hMU9lwff-Vq9XuXn" title="PROFESSIONAL TEXTURE & LOOKDEV REEL"/>
+          <DemoReel link="https://player.vimeo.com/video/829171109?h=f7c951bad6" title="PERSONAL COMPOSITING REEL"/>
+          <DemoReel link="https://player.vimeo.com/video/1011143104?h=3894bcfb5c" title="PROFESSIONAL LIGHTING AND COMPOSITING REEL"/>
+          <DemoReel link="https://www.youtube.com/embed/3ib-F2JUpUo?si=Er79SOhpxjhx17DV" title="STUDENT SHORT FILM"/>
         </div>
         </div>
       </div>

@@ -1,6 +1,7 @@
 export default function DemoReel({ link, title }) {
   return (
     <div style={stylesheet.container}>
+       <h2 style={stylesheet.title}>{title}</h2>
       <div style = {stylesheet.videoWrapper}>
         <iframe
           title="vimeo-player"
@@ -11,7 +12,7 @@ export default function DemoReel({ link, title }) {
           allowfullscreen
         ></iframe>
       </div>
-       <h2 style={stylesheet.title}>{title}</h2>
+      
     </div>
   );
 }
